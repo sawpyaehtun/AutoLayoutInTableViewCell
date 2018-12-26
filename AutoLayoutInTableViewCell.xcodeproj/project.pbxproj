@@ -15,7 +15,10 @@
 		3723814321D33C9000963A47 /* AutoLayoutInTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723814221D33C9000963A47 /* AutoLayoutInTableViewCellTests.swift */; };
 		3723814E21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723814D21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift */; };
 		3723815C21D33CD400963A47 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723815B21D33CD400963A47 /* TableViewController.swift */; };
-		3723815E21D346FD00963A47 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723815D21D346FD00963A47 /* TableViewCell.swift */; };
+		3723816821D3A0E700963A47 /* CellForLogoTextTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723816621D3A0E700963A47 /* CellForLogoTextTable.swift */; };
+		3723816921D3A0E700963A47 /* CellForLogoTextTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3723816721D3A0E700963A47 /* CellForLogoTextTable.xib */; };
+		3723816C21D3A42400963A47 /* CellForLogoTextTable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723816A21D3A42400963A47 /* CellForLogoTextTable2.swift */; };
+		3723816D21D3A42400963A47 /* CellForLogoTextTable2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3723816B21D3A42400963A47 /* CellForLogoTextTable2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,10 @@
 		3723814D21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutInTableViewCellUITests.swift; sourceTree = "<group>"; };
 		3723814F21D33C9000963A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3723815B21D33CD400963A47 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		3723815D21D346FD00963A47 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3723816621D3A0E700963A47 /* CellForLogoTextTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForLogoTextTable.swift; sourceTree = "<group>"; };
+		3723816721D3A0E700963A47 /* CellForLogoTextTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForLogoTextTable.xib; sourceTree = "<group>"; };
+		3723816A21D3A42400963A47 /* CellForLogoTextTable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForLogoTextTable2.swift; sourceTree = "<group>"; };
+		3723816B21D3A42400963A47 /* CellForLogoTextTable2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForLogoTextTable2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +156,10 @@
 		3723816121D3760500963A47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3723815D21D346FD00963A47 /* TableViewCell.swift */,
+				3723816621D3A0E700963A47 /* CellForLogoTextTable.swift */,
+				3723816721D3A0E700963A47 /* CellForLogoTextTable.xib */,
+				3723816A21D3A42400963A47 /* CellForLogoTextTable2.swift */,
+				3723816B21D3A42400963A47 /* CellForLogoTextTable2.xib */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
@@ -261,6 +270,8 @@
 			files = (
 				3723813821D33C9000963A47 /* LaunchScreen.storyboard in Resources */,
 				3723813521D33C9000963A47 /* Assets.xcassets in Resources */,
+				3723816D21D3A42400963A47 /* CellForLogoTextTable2.xib in Resources */,
+				3723816921D3A0E700963A47 /* CellForLogoTextTable.xib in Resources */,
 				3723813321D33C8E00963A47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3723813021D33C8E00963A47 /* ViewController.swift in Sources */,
-				3723815E21D346FD00963A47 /* TableViewCell.swift in Sources */,
+				3723816C21D3A42400963A47 /* CellForLogoTextTable2.swift in Sources */,
 				3723815C21D33CD400963A47 /* TableViewController.swift in Sources */,
+				3723816821D3A0E700963A47 /* CellForLogoTextTable.swift in Sources */,
 				3723812E21D33C8E00963A47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,13 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var message = ["This is short text.","This is also short text, but this is a little bit longer.","This text is really really very very long text. This text should can be read.By the way merry Christmas. Now we are in haulio company.That company manage containers by technically."]
+    let message = ["This is short text.","This is also short text, but this is a little bit longer.","This text is really really very very long text. This text should can be read.By the way merry Christmas. Now we are in haulio company.That company manage containers by technically.","This text is really really very very long text. This text should can be read.By the way merry Christmas. Now we are in haulio company.That company manage containers by technically."]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.register(UINib(nibName: "CellForLogoTextTable", bundle: nil), forCellReuseIdentifier: String(describing: CellForLogoTextTable.self))
+        self.tableView.register(UINib(nibName: "CellForLogoTextTable2", bundle: nil), forCellReuseIdentifier: String(describing: CellForLogoTextTable2.self))
 
 //        self.tableView.rowHeight = UITableView.automaticDimension
 //        self.tableView.estimatedRowHeight = 45
@@ -38,9 +41,17 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing : TableViewCell.self), for: indexPath) as? TableViewCell
+        if indexPath.row%2 == 0
+        {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing : CellForLogoTextTable.self), for: indexPath) as? CellForLogoTextTable
         cell?.setupCell(index: indexPath.row)
         return cell!
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing : CellForLogoTextTable2.self), for: indexPath) as? CellForLogoTextTable2
+            cell?.setupCell(index: indexPath.row)
+            return cell!
+        }
     }
 
     /*
