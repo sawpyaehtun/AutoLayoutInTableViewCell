@@ -14,6 +14,8 @@
 		3723813821D33C9000963A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3723813621D33C9000963A47 /* LaunchScreen.storyboard */; };
 		3723814321D33C9000963A47 /* AutoLayoutInTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723814221D33C9000963A47 /* AutoLayoutInTableViewCellTests.swift */; };
 		3723814E21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723814D21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift */; };
+		3723815C21D33CD400963A47 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723815B21D33CD400963A47 /* TableViewController.swift */; };
+		3723815E21D346FD00963A47 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723815D21D346FD00963A47 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3723814921D33C9000963A47 /* AutoLayoutInTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutInTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3723814D21D33C9000963A47 /* AutoLayoutInTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutInTableViewCellUITests.swift; sourceTree = "<group>"; };
 		3723814F21D33C9000963A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3723815B21D33CD400963A47 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3723815D21D346FD00963A47 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		3723812C21D33C8E00963A47 /* AutoLayoutInTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				3723812D21D33C8E00963A47 /* AppDelegate.swift */,
-				3723812F21D33C8E00963A47 /* ViewController.swift */,
-				3723813121D33C8E00963A47 /* Main.storyboard */,
-				3723813421D33C9000963A47 /* Assets.xcassets */,
-				3723813621D33C9000963A47 /* LaunchScreen.storyboard */,
 				3723813921D33C9000963A47 /* Info.plist */,
+				3723816121D3760500963A47 /* Views */,
+				3723816021D375C200963A47 /* Supports */,
+				3723815F21D3759E00963A47 /* Controllers */,
 			);
 			path = AutoLayoutInTableViewCell;
 			sourceTree = "<group>";
@@ -124,6 +126,34 @@
 			);
 			path = AutoLayoutInTableViewCellUITests;
 			sourceTree = "<group>";
+		};
+		3723815F21D3759E00963A47 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3723815B21D33CD400963A47 /* TableViewController.swift */,
+				3723812F21D33C8E00963A47 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		3723816021D375C200963A47 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				3723813621D33C9000963A47 /* LaunchScreen.storyboard */,
+				3723813421D33C9000963A47 /* Assets.xcassets */,
+				3723813121D33C8E00963A47 /* Main.storyboard */,
+				3723812D21D33C8E00963A47 /* AppDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = SOURCE_ROOT;
+		};
+		3723816121D3760500963A47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3723815D21D346FD00963A47 /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -257,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3723813021D33C8E00963A47 /* ViewController.swift in Sources */,
+				3723815E21D346FD00963A47 /* TableViewCell.swift in Sources */,
+				3723815C21D33CD400963A47 /* TableViewController.swift in Sources */,
 				3723812E21D33C8E00963A47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
